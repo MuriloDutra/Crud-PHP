@@ -1,7 +1,7 @@
 <?php
     function listaFornecedores($connection)
     {
-        $query = "select * from FORNECEDORES";
+        $query = "select * from fornecedor";
         $fornecedores = array();
         $resultado = mysqli_query($connection, $query);
 
@@ -11,5 +11,12 @@
         }
 
         return $fornecedores;
+    }
+
+    function buscaFornecedor($connection, $id)
+    {
+        $query = "select * from fornecedor where id = {$id}";
+        $resultado = mysqli_query($connection, $id);
+        return mysqli_fetch_assoc($resultado);
     }
 ?>

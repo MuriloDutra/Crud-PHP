@@ -1,5 +1,5 @@
 <?php include("database/banco-fornecedor.php");
-    include("databse/connectionDatabase.php");
+    include("database/connectionDatabase.php");    
 ?>
 <html>
     <head>
@@ -19,23 +19,29 @@
                 <th>Deletar</th>
             </thead>
             <tbody>
-                <tr>
-                    <td>Murilo Dutra</td>
-                    <td>murilo.dutra2000@gmail.com</td>
-                    <td>
-                        <form action="edita-fornecedor.php">
-                            <button><i class="material-icons">settings</i></button>
-                        </form>
-                    </td>
-                    <td>
-                        <form action="detalhes-fornecedor.php">
-                            <button><i class="material-icons">info</i></button>
-                        </form>
-                    </td>
-                    <td>
-                        <button><i class="material-icons">delete</i></button>
-                    </td>
-                </tr>
+                <?php
+                    $fornecedores = listaFornecedores($connection);                 
+                    foreach($fornecedores as $fornecedor):?>
+                    <tr>
+                        <td><?=$fornecedor['nome']?></td>
+                        <td><?=$fornecedor['email']?></td>
+                        <td>
+                            <form action="edita-fornecedor.php" method="post">
+                                <input type="hidden" name="id" value="<?=$fornecedor['id']?>">
+                                <button><i class="material-icons">settings</i></button>
+                            </form>
+                        </td>
+                        <td>
+                            <form action="detalhes-fornecedor.php" method="post">
+                                <input type="hidden" name="id" value="<?=$fornecedor['id']?>">
+                                <button><i class="material-icons">info</i></button>
+                            </form>
+                        </td>
+                        <td>
+                            <button><i class="material-icons">delete</i></button>
+                        </td>
+                    </tr>
+                    <?php endforeach?>
             </tbody>
         <table>
     </body>
