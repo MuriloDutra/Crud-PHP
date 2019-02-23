@@ -1,3 +1,6 @@
+<?php include("database/banco-fornecedor.php");
+    include("databse/connectionDatabase.php");
+?>
 <html>
     <head>
         <meta charset="utf-8">
