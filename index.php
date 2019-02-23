@@ -2,7 +2,7 @@
     <head>
         <meta charset="utf-8">
         <link href="css/bootstrap.css" rel="stylesheet">
-        <link href="css/cabecalho.css" rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
