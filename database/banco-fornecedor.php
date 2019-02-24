@@ -16,7 +16,7 @@
     function buscaFornecedor($connection, $id)
     {
         $query = "select * from fornecedor where id = {$id}";
-        $resultado = mysqli_query($connection, $id);
+        $resultado = mysqli_query($connection, $query);
         return mysqli_fetch_assoc($resultado);
     }
 ?>

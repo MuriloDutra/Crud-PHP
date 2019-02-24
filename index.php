@@ -4,12 +4,12 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/index.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
-        <h1 class="center">Bem vindo ao teste de CRUD!</h1>
+        <h1>Bem vindo ao teste de CRUD!</h1>
         <table class="table table-striped table-bordered">
             <thead>
                 <th>Nome</th>
