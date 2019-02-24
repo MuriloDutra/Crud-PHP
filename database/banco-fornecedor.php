@@ -19,4 +19,13 @@
         $resultado = mysqli_query($connection, $query);
         return mysqli_fetch_assoc($resultado);
     }
+
+    function alteraFornecedor($connection, $id, $nome, $email, $telefone, $cep, $rua, $bairro, $municipio, $estado, $pais, 
+    $responsavelVendas, $cnpj_cpf)
+    {
+        $query = "update FORNECEDOR set nome={$nome}, email={$email}, telefone={$telefone}, CEP={$cep}, rua={$rua}, bairro={$bairro},
+        municipio={$municipio}, estado={$estado}, pais={$pais}, responsavelVendas={$responsavelVendas}, CNPJ_CPF={$cnpj_cpf}";
+
+        return mysqli_query($connection, $query);
+    }
 ?>
