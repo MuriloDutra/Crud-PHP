@@ -6,6 +6,7 @@
 
 ?>
     <div>
+        <h1 class="titulo">Editar fornecedor</h1>
         <form action="altera-fornecedor.php" method="post">
             <input type="hidden" name="id" value="<?=$fornecedor['id']?>">
             <table class="table">
