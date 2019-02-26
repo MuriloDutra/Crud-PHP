@@ -4,6 +4,7 @@
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/fornecedor.css" rel="stylesheet">
         <link href="css/detalhes.css" rel="stylesheet">
+        <link href="css/confirma.css" rel="stylesheet">
     </head>
     <body>
         <div id="cabecalho">
