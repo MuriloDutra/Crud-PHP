@@ -1,4 +1,4 @@
-<?php include("cabecalho.php")?>
+<?php include("fixos/cabecalho.php")?>
     <?php 
         include("database/banco-fornecedor.php");
         include("database/connectionDatabase.php");
@@ -27,4 +27,4 @@
         }
 
     ?>
-<?php include("rodape.php")?>
+<?php include("fixos/rodape.php")?>

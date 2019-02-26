@@ -1,6 +1,6 @@
 <?php include("database/banco-fornecedor.php");
     include("database/connectionDatabase.php");
-    include("cabecalho.php");
+    include("fixos/cabecalho.php");
     $id = $_POST['id'];
     $fornecedor = buscaFornecedor($connection, $id);
 ?>
@@ -56,4 +56,4 @@
             </table>
         </form>
     </div>
-<?php include("rodape.php");?>
+<?php include("fixos/rodape.php");?>

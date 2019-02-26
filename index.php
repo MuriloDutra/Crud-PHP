@@ -38,7 +38,11 @@
                             </form>
                         </td>
                         <td>
-                            <button class="botaoDeletar"><i class="material-icons">delete</i></button>
+                            <form action="confirma.php" method="post">
+                                <input type="hidden" name="id" value="<?=$fornecedor['id']?>">
+                                <input type="hidden" name="nome" value="<?=$fornecedor['nome']?>">
+                                <button><i class="material-icons">delete</i></button>
+                            </form>
                         </td>
                     </tr>
                     <?php endforeach?>

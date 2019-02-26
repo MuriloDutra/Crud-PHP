@@ -1,6 +1,6 @@
 <?php include("database/banco-fornecedor.php");
     include("database/connectionDatabase.php");
-    include("cabecalho.php");
+    include("fixos/cabecalho.php");
     $id = $_POST['id'];
     $fornecedor = buscaFornecedor($connection, $id);
 
@@ -9,7 +9,7 @@
         <h1 class="titulo">Editar fornecedor</h1>
         <form action="altera-fornecedor.php" method="post">
             <input type="hidden" name="id" value="<?=$fornecedor['id']?>">
-            <table class="table">
+            <table class="tabelaEdita table">
                 <tr>
                     <td>Nome</td>
                     <td><input class="form-control" type="text" name="nome" value="<?=$fornecedor['nome']?>"></td>
@@ -61,4 +61,4 @@
             </table>
         </form>
     </div>
-<?php include("rodape.php");?>
+<?php include("fixos/rodape.php");?>
