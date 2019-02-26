@@ -28,4 +28,10 @@
 
         return mysqli_query($connection, $query);
     }
+
+    function excluiFornecedor($connection, $id)
+    {
+        $query = "delete from FORNECEDOR where id = {$id}";
+        return mysqli_query($connection, $id);
+    }
 ?>
