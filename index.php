@@ -38,12 +38,13 @@
                             </form>
                         </td>
                         <td>
-                            <button><i class="material-icons">delete</i></button>
+                            <button class="botaoDeletar"><i class="material-icons">delete</i></button>
                         </td>
                     </tr>
                     <?php endforeach?>
             </tbody>
         <table>
+        <script src="javascript/jquery.js"></script>
+        <script src="javascript/deletar.js"></script>
     </body>
-    <!--<button type="submit" formaction="/action_page2.php">Submit to another page</button>-->
 </html>
