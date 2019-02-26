@@ -10,6 +10,7 @@
     </head>
     <body>
         <h1>Bem vindo ao teste de CRUD!</h1>
+        <button class="btn btn-primary">Adicionar novo fornecedor</button>
         <table class="table table-striped table-bordered">
             <thead>
                 <th>Nome</th>
@@ -48,7 +49,5 @@
                     <?php endforeach?>
             </tbody>
         <table>
-        <script src="javascript/jquery.js"></script>
-        <script src="javascript/deletar.js"></script>
     </body>
 </html>
