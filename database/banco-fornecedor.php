@@ -34,4 +34,12 @@
         $query = "delete from FORNECEDOR where id = {$id}";
         return mysqli_query($connection, $query);
     }
-?>
+
+    function insereFornecedor($connection, $nome, $email, $telefone, $cep, $rua, $bairro, $municipio, $estado, $pais, 
+    $responsavelVendas, $cnpj_cpf)
+    {
+        $query = "insert into FORNECEDOR (nome, email, telefone, CEP, rua, bairro, municipio, estado, pais, responsavelVendas, CNPJ_CPF)
+        values('{$nome}', '{$email}', {$telefone}, {$cep}, '{$rua}', '{$bairro}', '{$municipio}', {$estado}', '{$pais}', '{$responsavelVendas}', {$cnpj_cpf}";
+        
+        return mysqli_query($connection, $query);
+    }
