@@ -4,7 +4,7 @@
         include("database/connectionDatabase.php");
         
         $id = $_POST['id'];
-        $nome = $_POST['nome'];
+        $nome = $_POST['nome'];        
         $email = $_POST['email'];
         $telefone = $_POST['telefone'];
         $cep = $_POST['cep'];
@@ -25,6 +25,5 @@
             <p class="text-danger">O fornecedor <?= $nome; ?> não foi alterado:<br> <?php echo $msg?></p>
         <?php
         }
-
     ?>
 <?php include("fixos/rodape.php")?>
