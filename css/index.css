@@ -1,6 +1,7 @@
 h1{
     padding:15px;
 }
+
 button {
     background-color: Transparent;
     background-repeat:no-repeat;
@@ -8,4 +9,9 @@ button {
     cursor:pointer;
     overflow: hidden;
     outline:none;
+}
+
+#btnAdiciona{
+    padding-bottom:10px;
+    padding-left:10px;
 }

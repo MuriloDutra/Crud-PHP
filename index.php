@@ -10,7 +10,9 @@
     </head>
     <body>
         <h1>Bem vindo ao teste de CRUD!</h1>
-        <button class="btn btn-primary">Adicionar novo fornecedor</button>
+        <form id="btnAdiciona" action="formulario-adiciona.php" method="post">
+            <button class="btn btn-primary">Adicionar novo fornecedor</button>
+        </form>
         <table class="table table-striped table-bordered">
             <thead>
                 <th>Nome</th>
@@ -27,13 +29,13 @@
                         <td><?=$fornecedor['nome']?></td>
                         <td><?=$fornecedor['email']?></td>
                         <td>
-                            <form action="edita-fornecedor.php" method="post">
+                            <form action="formulario-edita.php" method="post">
                                 <input type="hidden" name="id" value="<?=$fornecedor['id']?>">
                                 <button><i class="material-icons">settings</i></button>
                             </form>
                         </td>
                         <td>
-                            <form action="detalhes-fornecedor.php" method="post">
+                            <form action="formulario-detalhes.php" method="post">
                                 <input type="hidden" name="id" value="<?=$fornecedor['id']?>">
                                 <button><i class="material-icons">info</i></button>
                             </form>
